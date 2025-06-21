@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<title>我的Vercel演示</title>
+<style>
+body {
+font-family: 'Arial', sans-serif;
+line-height: 1.6;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+background-color: #f5f5f5;
+了
+.container {
+max-width:800px;
+padding: 30px;
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 6px rgba(0, 0,0,0.1);
+text-align: center;
+了
+h1 ｛
+color:#333;
+了
+pt
+color:#666;
+margin-bottom: 20px;
+了
+.success {
+color:#28a745;
+font-weight: bold;
+了
+</style>
+</head>
+<body>
+<div class="container">
+<h1>我的Vercel部署演示</h1>
+<p>这是一个通过GitHub部署到Vercel的简单演示项目</p>
+<pclass="success">恭喜！如果你看到此页面，说明部署已成功！</p>
+<p>当前时间:<span id="current-time"></span></p>
+</div>
+<script>
+//显示当前时间
+function updateTime() {
+const timeElement = document.getElementById('current-time');
+timeElement.textContent = new Date().toLocaleString();
+了
+//页面加载时更新时间，并每秒更新一次
+updateTime();
+setInterval(updateTime, 1000);
+</script>
+</body>
+</html>
